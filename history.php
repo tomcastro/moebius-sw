@@ -1,21 +1,15 @@
 <html>
 <head>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-   
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<link rel="src" href="index.css">
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/jquery.dataTables.min.css">
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
-	<script src="https://cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js"></script>
-	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.6/css/jquery.dataTables.min.css">
 </head>
 
 <body>
@@ -25,13 +19,13 @@
 
     <div id="title">
     	<h3 align="center">ID: <?php echo $_REQUEST['a'] ?></h3>
-    </div><br><br>
+    </div><br>
 
-    <div id="back">
-    	<a href="index.php" class="btn btn-default" role="button">Volver</a>
+    <div id="back" style="padding-left: 5px;">
+    	<a href="index.php" class="btn btn-info" role="button">Volver</a>
     </div>
 
-	<div id="tablespace"><br><br>
+	<div id="tablespace" style="padding: 5px;"><br><br>
 	<table id='datatable' class="table table-bordered"><thead><tr>
 		<th>ID Nota</th>
 		<th>Nota</th>

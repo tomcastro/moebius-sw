@@ -20,7 +20,7 @@ $db_connection = pg_connect("host=192.168.40.129 port=5432 dbname=AlertCentral u
 	if(isset($_REQUEST['a'])){
 	
 		$id = $_REQUEST['a'];
-		$query = "UPDATE alerts SET moebiusos_status=4 WHERE id=$id";
+		$query = "INSERT INTO moebiusos(idalert, moebius_status, moebius_timeraised) VALUES ($id, 4, NOW())";
 		$result = pg_query($query);
 		
 		header('Location: http://localhost:8080/index.php?mess=2');
